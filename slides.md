@@ -1,23 +1,25 @@
 ---
-theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
+theme: default
+colorSchema: dark
+background: https://lh3.googleusercontent.com/pw/AIL4fc9IcGYttFG1_ijz3BPLH4GB5Ebe3m_zm7K4naFGg_1TBMtUrH-Zs6PMF4OKS_msTdr3i3VAgCtipZ17J8HA9g929621UqaNaYKpvv3ILb8lFcXO-0UB4bh7UVVGHmIdYmLUC2jOjciAN9bj0ga229yC7A=w1401-h1051-s-no?authuser=0
 class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## The open source rollercoaster
 
-  Learn more at [Sli.dev](https://sli.dev)
+  The story of taking over a large Github project
+
+  [RMWC takover](https://github.com/jensborch/rmwc-takeover)
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: The open source rollercoaster
 ---
 
-# Welcome to Slidev
+# The open source rollercoaster
 
-Presentation slides for developers
+The story of taking over a large Github project
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -26,10 +28,7 @@ Presentation slides for developers
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/jensborch/rmwc-takeover" target="_blank" alt="GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -41,6 +40,50 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
+layout: center
+---
+
+# Opens Source software consititute 70-90% of any given piece of modern software solution
+
+<a href="https://www.linuxfoundation.org/blog/blog/a-summary-of-census-ii-open-source-software-application-libraries-the-world-depends-on">According to the The Linux Foundation Open Source Software (FOSS)</a>
+
+---
+layout: center
+---
+
+# We have a responsibility to give something back
+
+---
+layout: center
+---
+# Faker.js
+<a href="https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected">“Respectfully, I am no longer going to support Fortune 500s (and other smaller sized companies) with my free work”</a>
+
+---
+layout: center
+---
+
+# RMWC
+
+<div class="abs-br m-6 flex gap-2">
+  <a href="https://github.com/rmwc/rmwc" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
+  </a>
+</div>
+
+---
+layout: center
+---
+
+# What
+
+---
+layout: center
+---
+
+# Why
+
 ---
 
 # What is Slidev?

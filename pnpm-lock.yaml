@@ -3,13 +3,19 @@ lockfileVersion: '6.0'
 dependencies:
   '@slidev/cli':
     specifier: ^0.42.9
-    version: 0.42.9(postcss@8.4.28)
+    version: 0.42.9(@vue/compiler-sfc@3.3.4)(postcss@8.4.28)(vue-template-compiler@2.7.14)
   '@slidev/theme-default':
     specifier: latest
     version: 0.21.2
   '@slidev/theme-seriph':
     specifier: latest
     version: 0.21.3
+  slidev-theme-light-icons:
+    specifier: ^1.0.2
+    version: 1.0.2(@slidev/client@0.42.9)(shiki@0.14.3)(vue-template-compiler@2.7.14)
+  slidev-theme-takahashi:
+    specifier: ^1.0.0
+    version: 1.0.0
 
 packages:
 
@@ -26,6 +32,10 @@ packages:
     dependencies:
       execa: 5.1.1
       find-up: 5.0.0
+    dev: false
+
+  /@antfu/utils@0.1.7:
+    resolution: {integrity: sha512-XbmXbhrjfxQq+ishOKeUIK1VYxQV0B+ZkAQkz00bxhmQd5izdT0YRSDwkyH/KX46gFVBMd+6anvSDlciUt3L4A==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@antfu/utils/-/utils-0.1.7.tgz}
     dev: false
 
   /@antfu/utils@0.7.6:
@@ -423,6 +433,15 @@ packages:
     dev: false
     optional: true
 
+  /@esbuild/linux-loong64@0.14.54:
+    resolution: {integrity: sha512-bZBrLAIX1kpWelV0XemxBZllyRmM6vgFQQG2GdNb+r3Fkp0FOh1NJSvekXDs7jq70k4euu1cryLMfU+mTXlEpw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [loong64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@esbuild/linux-loong64@0.18.20:
     resolution: {integrity: sha512-nXW8nqBTrOpDLPgPY9uV+/1DjxoQ7DoB2N8eocyq8I9XuqJ7BiAMDMf9n1xZM9TgW0J8zrquIb/A7s3BJv7rjg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@esbuild/linux-loong64/-/linux-loong64-0.18.20.tgz}
     engines: {node: '>=12'}
@@ -551,6 +570,15 @@ packages:
     resolution: {integrity: sha512-dexzEndlXQX/sbQhnEpA94Pby6JCGV2tZToSGcPPQpbilDGyk5VMd0ymusYoocRAn6+qLpGRvMoz5XFKGqP+VA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@iconify-json/ph/-/ph-1.1.6.tgz}
     dependencies:
       '@iconify/types': 2.0.0
+    dev: false
+
+  /@iconify/json-tools@1.0.10:
+    resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@iconify/json-tools/-/json-tools-1.0.10.tgz}
+    deprecated: no longer maintained, use @iconify/utils
+    dev: false
+
+  /@iconify/json@1.1.461:
+    resolution: {integrity: sha512-9Y41Tk9s3LDt4WI20XySNhNX6qTJ/WOBeE3O2iyoV9LJ6gFEDjp0uTPzfRU9NUx7D6VkvQ/htJEuRe9LmyMqUA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@iconify/json/-/json-1.1.461.tgz}
     dev: false
 
   /@iconify/types@2.0.0:
@@ -733,7 +761,7 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli@0.42.9(postcss@8.4.28):
+  /@slidev/cli@0.42.9(@vue/compiler-sfc@3.3.4)(postcss@8.4.28)(vue-template-compiler@2.7.14):
     resolution: {integrity: sha512-JehwE5fL/CoIK7+CY3qw9IUcOnYw2L45S29jmmjb0cDEfDNz1J1YJDZQRc4o/DW//yZ9cuCLkQ4iaw+foCXLEg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/cli/-/cli-0.42.9.tgz}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -787,7 +815,7 @@ packages:
       resolve-global: 1.0.0
       shiki: 0.14.3
       unocss: 0.55.2(postcss@8.4.28)(vite@4.4.9)
-      unplugin-icons: 0.16.5
+      unplugin-icons: 0.16.5(@vue/compiler-sfc@3.3.4)(vue-template-compiler@2.7.14)
       unplugin-vue-components: 0.25.1(vue@3.3.4)
       unplugin-vue-markdown: 0.24.2(vite@4.4.9)
       uqr: 0.1.2
@@ -820,6 +848,58 @@ packages:
       - terser
       - vue-template-compiler
       - vue-template-es2015-compiler
+    dev: false
+
+  /@slidev/cli@0.7.4(vue-template-compiler@2.7.14):
+    resolution: {integrity: sha512-psUwQw6XLn8ftfUMKY0e9eOKMXcZ2pYsz0JQdcWmYU6wx14GylArT+gj3MMAomdbTVyl7PgfWXqhrfG7ECTDxA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/cli/-/cli-0.7.4.tgz}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    peerDependencies:
+      playwright-chromium: ^1.10.0
+    peerDependenciesMeta:
+      playwright-chromium:
+        optional: true
+    dependencies:
+      '@antfu/utils': 0.1.7
+      '@iconify/json': 1.1.461
+      '@slidev/client': 0.7.4
+      '@slidev/parser': 0.7.4
+      '@slidev/types': 0.7.4
+      '@vitejs/plugin-vue': 1.10.2(vite@2.9.16)
+      '@vue/compiler-sfc': 3.3.4
+      cli-progress: 3.12.0
+      codemirror: 5.65.14
+      connect: 3.7.0
+      fast-glob: 3.3.1
+      fs-extra: 10.1.0
+      jiti: 1.19.3
+      js-base64: 3.7.5
+      kolorist: 1.8.0
+      markdown-it: 12.3.2
+      markdown-it-katex: 2.0.3
+      markdown-it-link-attributes: 3.0.0
+      monaco-editor: 0.23.0
+      pdf-lib: 1.17.1
+      prismjs: 1.29.0
+      prompts: 2.4.2
+      shiki: 0.9.15
+      sirv: 1.0.19
+      vite: 2.9.16
+      vite-plugin-components: 0.8.4(vite@2.9.16)
+      vite-plugin-icons: 0.5.1(@iconify/json@1.1.461)(@vue/compiler-sfc@3.3.4)(vue-template-compiler@2.7.14)
+      vite-plugin-md: 0.6.7(vite@2.9.16)
+      vite-plugin-remote-assets: 0.2.2(vite@2.9.16)
+      vite-plugin-windicss: 0.16.7(vite@2.9.16)
+      vue: 3.3.4
+      windicss: 3.5.6
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - vue-template-compiler
     dev: false
 
   /@slidev/client@0.42.9(postcss@8.4.28)(vite@4.4.9):
@@ -863,11 +943,42 @@ packages:
       - vite
     dev: false
 
+  /@slidev/client@0.7.4:
+    resolution: {integrity: sha512-5mR7VbRZStSaSF7C9/6Q/o01g8BQHkEGD8fDJH8Kx5kGd0NXyMK13Y04Mrvqbg1WpaTWvDCma2GR+J0cDh7oOQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/client/-/client-0.7.4.tgz}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@antfu/utils': 0.1.7
+      '@slidev/parser': 0.7.4
+      '@slidev/types': 0.7.4
+      '@vueuse/core': 4.11.2(vue@3.3.4)
+      '@vueuse/head': 0.5.1(vue@3.3.4)
+      codemirror: 5.65.14
+      file-saver: 2.0.5
+      js-base64: 3.7.5
+      js-yaml: 4.1.0
+      monaco-editor: 0.23.0
+      prettier: 2.8.8
+      recordrtc: 5.6.2
+      vue: 3.3.4
+      vue-router: 4.2.4(vue@3.3.4)
+      windicss: 2.5.14
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
   /@slidev/parser@0.42.9:
     resolution: {integrity: sha512-7CHjWDJjv0Cu6tmaXGwcg7k3Vh4dM+W2ZcCBIb6wZ+UnG0s2vQVPc/2dxJc5VeU7qjw7s7yymEyeq0lX0Nd69w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/parser/-/parser-0.42.9.tgz}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@slidev/types': 0.42.9
+      js-yaml: 4.1.0
+    dev: false
+
+  /@slidev/parser@0.7.4:
+    resolution: {integrity: sha512-1V+RglqOQmC4RNajdrYUqIDVins4tpbtzisl/V6yv9CkMq4sP/+MvdpRk8KR6SNkIPM1hgN+38C5AF+5DeQy3w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/parser/-/parser-0.7.4.tgz}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@slidev/types': 0.7.4
       js-yaml: 4.1.0
     dev: false
 
@@ -881,6 +992,21 @@ packages:
       theme-vitesse: 0.1.14
     dev: false
 
+  /@slidev/theme-default@0.7.9(@slidev/client@0.42.9)(shiki@0.14.3):
+    resolution: {integrity: sha512-11+yoDYNiFcp0z5DCVUJK+apxdP25el1YI54Y5IfGNouk9UIjf0wZzDc5m73jF1dzQsHJkCMnqkMo3529TfuSQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/theme-default/-/theme-default-0.7.9.tgz}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@slidev/client': '*'
+      shiki: '*'
+    dependencies:
+      '@slidev/client': 0.42.9(postcss@8.4.28)(vite@4.4.9)
+      '@slidev/types': 0.13.13
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.4
+      shiki: 0.14.3
+      theme-vitesse: 0.1.14
+    dev: false
+
   /@slidev/theme-seriph@0.21.3:
     resolution: {integrity: sha512-cLya6O4hmcLHUhloCMPPoKMLX27Q+8M8pRS82BSsLXVeXTXrlpc3l3glx5VB738p+NQr7FgqFN6H2CXQRoVv9Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/theme-seriph/-/theme-seriph-0.21.3.tgz}
     engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
@@ -891,6 +1017,11 @@ packages:
       theme-vitesse: 0.1.14
     dev: false
 
+  /@slidev/types@0.13.13:
+    resolution: {integrity: sha512-PdYByaK2yCFNP0J5UFonGXbjuIWSiNwaZklOe9QTZDClUOye6YprSffJpEHPPXb2ktyTf6BZIPd4YNhpTda70w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/types/-/types-0.13.13.tgz}
+    engines: {node: '>=14.0.0'}
+    dev: false
+
   /@slidev/types@0.22.7:
     resolution: {integrity: sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/types/-/types-0.22.7.tgz}
     engines: {node: '>=14.0.0'}
@@ -898,6 +1029,11 @@ packages:
 
   /@slidev/types@0.42.9:
     resolution: {integrity: sha512-6jlN/ZpIyRuxroYT7U7VC/gLCelFxafQX4WXfjlglk3oyK3ytb8i8LiO3tHIEueWup2WlQRXNDJpVvqg25GlNA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/types/-/types-0.42.9.tgz}
+    engines: {node: '>=14.0.0'}
+    dev: false
+
+  /@slidev/types@0.7.4:
+    resolution: {integrity: sha512-hqOGpvr0gFlQVwg1gs+KO2mWT2K3e93iCKG9xorNDQ6fmolNkWtXNr1aQ0pNlWUQpE4nYBK4WUK/E+2HIMONDQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@slidev/types/-/types-0.7.4.tgz}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -1211,6 +1347,15 @@ packages:
       - supports-color
     dev: false
 
+  /@vitejs/plugin-vue@1.10.2(vite@2.9.16):
+    resolution: {integrity: sha512-/QJ0Z9qfhAFtKRY+r57ziY4BSbGUTGsPRMpB/Ron3QPwBZM4OZAZHdTa4a8PafCwU5DTatXG8TMDoP8z+oDqJw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vitejs/plugin-vue/-/plugin-vue-1.10.2.tgz}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: ^2.5.10
+    dependencies:
+      vite: 2.9.16
+    dev: false
+
   /@vitejs/plugin-vue@4.3.3(vite@4.4.9)(vue@3.3.4):
     resolution: {integrity: sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vitejs/plugin-vue/-/plugin-vue-4.3.3.tgz}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -1344,6 +1489,16 @@ packages:
       - vue
     dev: false
 
+  /@vueuse/core@4.11.2(vue@3.3.4):
+    resolution: {integrity: sha512-4A17XvKXpMR6829EVWvrdSKEeAjTWaiC3+xh51KEtlyCwvWQwZ0xwKDrbMj+e15ANxjHrTw/0bJVaWDfPQt/Pw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vueuse/core/-/core-4.11.2.tgz}
+    dependencies:
+      '@vueuse/shared': 4.11.2(vue@3.3.4)
+      vue-demi: 0.14.5(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
   /@vueuse/core@8.9.4(vue@3.3.4):
     resolution: {integrity: sha512-B/Mdj9TK1peFyWaPof+Zf/mP9XuGAngaJZBwPaXBvU3aCTZlx3ltlrFFFyMV4iGBwsjSCeUCgZrtkEj9dS2Y3Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vueuse/core/-/core-8.9.4.tgz}
     peerDependencies:
@@ -1360,6 +1515,14 @@ packages:
       '@vueuse/shared': 8.9.4(vue@3.3.4)
       vue: 3.3.4
       vue-demi: 0.14.5(vue@3.3.4)
+    dev: false
+
+  /@vueuse/head@0.5.1(vue@3.3.4):
+    resolution: {integrity: sha512-xt6qgtItb4z/7vp664opQc0c2+ZoU9itMfvpmg4+h0uJcEnhl7LYxO4V+G8H7EVki7SyXDIFMfoCiCFaJrArmg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vueuse/head/-/head-0.5.1.tgz}
+    peerDependencies:
+      vue: '>=3'
+    dependencies:
+      vue: 3.3.4
     dev: false
 
   /@vueuse/head@1.3.1(vue@3.3.4):
@@ -1421,6 +1584,15 @@ packages:
       - vue
     dev: false
 
+  /@vueuse/shared@4.11.2(vue@3.3.4):
+    resolution: {integrity: sha512-vTbTi6ou7ljH3CkKVoaIaCAoWB5T1ewSogpL6VnO1duMPNuiv7x8K/LunMbnTg4tVyt6QwaiCuEq/kyS6AUBRg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vueuse/shared/-/shared-4.11.2.tgz}
+    dependencies:
+      vue-demi: 0.14.5(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
   /@vueuse/shared@8.9.4(vue@3.3.4):
     resolution: {integrity: sha512-wt+T30c4K6dGRMVqPddexEVLa28YwxW5OFIPmzUHICjphfAuBFTTdDoyqREZNDOFJZ44ARH1WWQNCUK8koJ+Ag==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@vueuse/shared/-/shared-8.9.4.tgz}
     peerDependencies:
@@ -1441,6 +1613,20 @@ packages:
     dependencies:
       debug: 4.3.4
       jiti: 1.19.3
+      windicss: 3.5.6
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@windicss/plugin-utils@0.16.7:
+    resolution: {integrity: sha512-mxgTj/MkemN8JlyfaS20OAJ0BqTUoUlDT9wD/m5U+nUa5SN/r0kPlg1IW9SbmRTrYjNXWEENf9F0Fjb/X4zn6g==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/@windicss/plugin-utils/-/plugin-utils-0.16.7.tgz}
+    dependencies:
+      '@antfu/utils': 0.1.7
+      debug: 4.3.4
+      fast-glob: 3.3.1
+      jiti: 1.19.3
+      magic-string: 0.25.9
+      micromatch: 4.0.5
       windicss: 3.5.6
     transitivePeerDependencies:
       - supports-color
@@ -1521,10 +1707,23 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/asynckit/-/asynckit-0.4.0.tgz}
     dev: false
 
+  /at-least-node@1.0.0:
+    resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/at-least-node/-/at-least-node-1.0.0.tgz}
+    engines: {node: '>= 4.0.0'}
+    dev: false
+
   /axios@0.21.4(debug@4.3.2):
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/axios/-/axios-0.21.4.tgz}
     dependencies:
       follow-redirects: 1.15.2(debug@4.3.2)
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /axios@0.21.4(debug@4.3.4):
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/axios/-/axios-0.21.4.tgz}
+    dependencies:
+      follow-redirects: 1.15.2(debug@4.3.4)
     transitivePeerDependencies:
       - debug
     dev: false
@@ -1558,6 +1757,13 @@ packages:
     engines: {node: '>= 5.10.0'}
     dependencies:
       big-integer: 1.6.51
+    dev: false
+
+  /brace-expansion@1.1.11:
+    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/brace-expansion/-/brace-expansion-1.1.11.tgz}
+    dependencies:
+      balanced-match: 1.0.2
+      concat-map: 0.0.1
     dev: false
 
   /brace-expansion@2.0.1:
@@ -1631,6 +1837,14 @@ packages:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
+    dev: false
+
+  /chalk@4.1.2:
+    resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/chalk/-/chalk-4.1.2.tgz}
+    engines: {node: '>=10'}
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
     dev: false
 
   /character-entities@2.0.2:
@@ -1730,6 +1944,10 @@ packages:
   /commander@8.3.0:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/commander/-/commander-8.3.0.tgz}
     engines: {node: '>= 12'}
+    dev: false
+
+  /concat-map@0.0.1:
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/concat-map/-/concat-map-0.0.1.tgz}
     dev: false
 
   /connect@3.7.0:
@@ -2105,6 +2323,10 @@ packages:
     resolution: {integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/dayjs/-/dayjs-1.11.9.tgz}
     dev: false
 
+  /de-indent@1.0.2:
+    resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/de-indent/-/de-indent-1.0.2.tgz}
+    dev: false
+
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/debug/-/debug-2.6.9.tgz}
     peerDependencies:
@@ -2289,6 +2511,10 @@ packages:
     dev: false
     optional: true
 
+  /entities@2.1.0:
+    resolution: {integrity: sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/entities/-/entities-2.1.0.tgz}
+    dev: false
+
   /entities@3.0.1:
     resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/entities/-/entities-3.0.1.tgz}
     engines: {node: '>=0.12'}
@@ -2309,6 +2535,215 @@ packages:
 
   /error-stack-parser-es@0.1.1:
     resolution: {integrity: sha512-g/9rfnvnagiNf+DRMHEVGuGuIBlCIMDFoTA616HaP2l9PlCjGjVhD98PNbVSJvmK4TttqT5mV5tInMhoFgi+aA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/error-stack-parser-es/-/error-stack-parser-es-0.1.1.tgz}
+    dev: false
+
+  /esbuild-android-64@0.14.54:
+    resolution: {integrity: sha512-Tz2++Aqqz0rJ7kYBfz+iqyE3QMycD4vk7LBRyWaAVFgFtQ/O8EJOnVmTOiDWYZ/uYzB4kvP+bqejYdVKzE5lAQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-android-64/-/esbuild-android-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-android-arm64@0.14.54:
+    resolution: {integrity: sha512-F9E+/QDi9sSkLaClO8SOV6etqPd+5DgJje1F9lOWoNncDdOBL2YF59IhsWATSt0TLZbYCf3pNlTHvVV5VfHdvg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-android-arm64/-/esbuild-android-arm64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-darwin-64@0.14.54:
+    resolution: {integrity: sha512-jtdKWV3nBviOd5v4hOpkVmpxsBy90CGzebpbO9beiqUYVMBtSc0AL9zGftFuBon7PNDcdvNCEuQqw2x0wP9yug==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-darwin-64/-/esbuild-darwin-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-darwin-arm64@0.14.54:
+    resolution: {integrity: sha512-OPafJHD2oUPyvJMrsCvDGkRrVCar5aVyHfWGQzY1dWnzErjrDuSETxwA2HSsyg2jORLY8yBfzc1MIpUkXlctmw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-freebsd-64@0.14.54:
+    resolution: {integrity: sha512-OKwd4gmwHqOTp4mOGZKe/XUlbDJ4Q9TjX0hMPIDBUWWu/kwhBAudJdBoxnjNf9ocIB6GN6CPowYpR/hRCbSYAg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-freebsd-arm64@0.14.54:
+    resolution: {integrity: sha512-sFwueGr7OvIFiQT6WeG0jRLjkjdqWWSrfbVwZp8iMP+8UHEHRBvlaxL6IuKNDwAozNUmbb8nIMXa7oAOARGs1Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-32@0.14.54:
+    resolution: {integrity: sha512-1ZuY+JDI//WmklKlBgJnglpUL1owm2OX+8E1syCD6UAxcMM/XoWd76OHSjl/0MR0LisSAXDqgjT3uJqT67O3qw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-32/-/esbuild-linux-32-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-64@0.14.54:
+    resolution: {integrity: sha512-EgjAgH5HwTbtNsTqQOXWApBaPVdDn7XcK+/PtJwZLT1UmpLoznPd8c5CxqsH2dQK3j05YsB3L17T8vE7cp4cCg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-64/-/esbuild-linux-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-arm64@0.14.54:
+    resolution: {integrity: sha512-WL71L+0Rwv+Gv/HTmxTEmpv0UgmxYa5ftZILVi2QmZBgX3q7+tDeOQNqGtdXSdsL8TQi1vIaVFHUPDe0O0kdig==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-arm@0.14.54:
+    resolution: {integrity: sha512-qqz/SjemQhVMTnvcLGoLOdFpCYbz4v4fUo+TfsWG+1aOu70/80RV6bgNpR2JCrppV2moUQkww+6bWxXRL9YMGw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-arm/-/esbuild-linux-arm-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-mips64le@0.14.54:
+    resolution: {integrity: sha512-qTHGQB8D1etd0u1+sB6p0ikLKRVuCWhYQhAHRPkO+OF3I/iSlTKNNS0Lh2Oc0g0UFGguaFZZiPJdJey3AGpAlw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-ppc64le@0.14.54:
+    resolution: {integrity: sha512-j3OMlzHiqwZBDPRCDFKcx595XVfOfOnv68Ax3U4UKZ3MTYQB5Yz3X1mn5GnodEVYzhtZgxEBidLWeIs8FDSfrQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-riscv64@0.14.54:
+    resolution: {integrity: sha512-y7Vt7Wl9dkOGZjxQZnDAqqn+XOqFD7IMWiewY5SPlNlzMX39ocPQlOaoxvT4FllA5viyV26/QzHtvTjVNOxHZg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-linux-s390x@0.14.54:
+    resolution: {integrity: sha512-zaHpW9dziAsi7lRcyV4r8dhfG1qBidQWUXweUjnw+lliChJqQr+6XD71K41oEIC3Mx1KStovEmlzm+MkGZHnHA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-linux-s390x/-/esbuild-linux-s390x-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [s390x]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-netbsd-64@0.14.54:
+    resolution: {integrity: sha512-PR01lmIMnfJTgeU9VJTDY9ZerDWVFIUzAtJuDHwwceppW7cQWjBBqP48NdeRtoP04/AtO9a7w3viI+PIDr6d+w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-openbsd-64@0.14.54:
+    resolution: {integrity: sha512-Qyk7ikT2o7Wu76UsvvDS5q0amJvmRzDyVlL0qf5VLsLchjCa1+IAvd8kTBgUxD7VBUUVgItLkk609ZHUc1oCaw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-sunos-64@0.14.54:
+    resolution: {integrity: sha512-28GZ24KmMSeKi5ueWzMcco6EBHStL3B6ubM7M51RmPwXQGLe0teBGJocmWhgwccA1GeFXqxzILIxXpHbl9Q/Kw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-sunos-64/-/esbuild-sunos-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-windows-32@0.14.54:
+    resolution: {integrity: sha512-T+rdZW19ql9MjS7pixmZYVObd9G7kcaZo+sETqNH4RCkuuYSuv9AGHUVnPoP9hhuE1WM1ZimHz1CIBHBboLU7w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-windows-32/-/esbuild-windows-32-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-windows-64@0.14.54:
+    resolution: {integrity: sha512-AoHTRBUuYwXtZhjXZbA1pGfTo8cJo3vZIcWGLiUcTNgHpJJMC1rVA44ZereBHMJtotyN71S8Qw0npiCIkW96cQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-windows-64/-/esbuild-windows-64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild-windows-arm64@0.14.54:
+    resolution: {integrity: sha512-M0kuUvXhot1zOISQGXwWn6YtS+Y/1RT9WrVIOywZnJHo3jCDyewAc79aKNQWFCQm+xNHVTq9h8dZKvygoXQQRg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.54.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /esbuild@0.14.54:
+    resolution: {integrity: sha512-Cy9llcy8DvET5uznocPyqL3BFRrFXSVqbgpMJ9Wz8oVjZlh/zUSNbPRbov0VX7VxN2JH1Oa0uNxZ7eLRb62pJA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/esbuild/-/esbuild-0.14.54.tgz}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/linux-loong64': 0.14.54
+      esbuild-android-64: 0.14.54
+      esbuild-android-arm64: 0.14.54
+      esbuild-darwin-64: 0.14.54
+      esbuild-darwin-arm64: 0.14.54
+      esbuild-freebsd-64: 0.14.54
+      esbuild-freebsd-arm64: 0.14.54
+      esbuild-linux-32: 0.14.54
+      esbuild-linux-64: 0.14.54
+      esbuild-linux-arm: 0.14.54
+      esbuild-linux-arm64: 0.14.54
+      esbuild-linux-mips64le: 0.14.54
+      esbuild-linux-ppc64le: 0.14.54
+      esbuild-linux-riscv64: 0.14.54
+      esbuild-linux-s390x: 0.14.54
+      esbuild-netbsd-64: 0.14.54
+      esbuild-openbsd-64: 0.14.54
+      esbuild-sunos-64: 0.14.54
+      esbuild-windows-32: 0.14.54
+      esbuild-windows-64: 0.14.54
+      esbuild-windows-arm64: 0.14.54
     dev: false
 
   /esbuild@0.18.20:
@@ -2511,10 +2946,29 @@ packages:
       tslib: 2.4.0
     dev: false
 
+  /fs-extra@10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/fs-extra/-/fs-extra-10.1.0.tgz}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
   /fs-extra@11.1.1:
     resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/fs-extra/-/fs-extra-11.1.1.tgz}
     engines: {node: '>=14.14'}
     dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
+  /fs-extra@9.1.0:
+    resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/fs-extra/-/fs-extra-9.1.0.tgz}
+    engines: {node: '>=10'}
+    dependencies:
+      at-least-node: 1.0.0
       graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.0
@@ -2644,6 +3098,11 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
+  /has-flag@4.0.0:
+    resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/has-flag/-/has-flag-4.0.0.tgz}
+    engines: {node: '>=8'}
+    dev: false
+
   /has@1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/has/-/has-1.0.3.tgz}
     engines: {node: '>= 0.4.0'}
@@ -2655,6 +3114,11 @@ packages:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/hash-sum/-/hash-sum-2.0.0.tgz}
     dev: false
     optional: true
+
+  /he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/he/-/he-1.2.0.tgz}
+    hasBin: true
+    dev: false
 
   /heap@0.2.7:
     resolution: {integrity: sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/heap/-/heap-0.2.7.tgz}
@@ -2906,6 +3370,13 @@ packages:
       commander: 8.3.0
     dev: false
 
+  /katex@0.6.0:
+    resolution: {integrity: sha512-rS4mY3SvHYg5LtQV6RBcK0if7ur6plyEukAOV+jGGPqFImuzu8fHL6M752iBmRGoUyF0bhZbAPoezehn7xYksA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/katex/-/katex-0.6.0.tgz}
+    hasBin: true
+    dependencies:
+      match-at: 0.1.1
+    dev: false
+
   /khroma@2.0.0:
     resolution: {integrity: sha512-2J8rDNlQWbtiNYThZRvmMv5yt44ZakX+Tz5ZIp/mN1pt4snn+m030Va5Z4v8xA0cQFDXBwO/8i42xL4QPsVk3g==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/khroma/-/khroma-2.0.0.tgz}
     dev: false
@@ -2940,6 +3411,16 @@ packages:
 
   /layout-base@2.0.1:
     resolution: {integrity: sha512-dp3s92+uNI1hWIpPGH3jK2kxE2lMjdXdr+DH8ynZHpd6PUlH6x6cbuXnoMmiNumznqaNO31xu9e79F0uuZ0JFg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/layout-base/-/layout-base-2.0.1.tgz}
+    dev: false
+
+  /light-icons@1.0.10:
+    resolution: {integrity: sha512-EBB6iexm7JEceMxP1C1FjKaezzxkZFdRNP/J/TEl/kLPNjhTbvsVkGJkWgBdX3Cpzw0KThlfml4RJi2Mybr+mA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/light-icons/-/light-icons-1.0.10.tgz}
+    dev: false
+
+  /linkify-it@3.0.3:
+    resolution: {integrity: sha512-ynTsyrFSdE5oZ/O9GEf00kPngmOfVwazR5GKDq6EYfhlpFug3J2zybX56a2PRRpc9P+FuSoGNAwjlbDs9jJBPQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/linkify-it/-/linkify-it-3.0.3.tgz}
+    dependencies:
+      uc.micro: 1.0.6
     dev: false
 
   /linkify-it@4.0.1:
@@ -2995,6 +3476,12 @@ packages:
     dev: false
     optional: true
 
+  /magic-string@0.25.9:
+    resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/magic-string/-/magic-string-0.25.9.tgz}
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: false
+
   /magic-string@0.30.3:
     resolution: {integrity: sha512-B7xGbll2fG/VjP+SWg4sX3JynwIU0mjoTc6MPpKNuIvftk6u6vqhDnk1R80b8C2GBR6ywqy+1DcKBrevBg+bmw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/magic-string/-/magic-string-0.30.3.tgz}
     engines: {node: '>=12'}
@@ -3006,8 +3493,29 @@ packages:
     resolution: {integrity: sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/markdown-it-footnote/-/markdown-it-footnote-3.0.3.tgz}
     dev: false
 
+  /markdown-it-katex@2.0.3:
+    resolution: {integrity: sha512-nUkkMtRWeg7OpdflamflE/Ho/pWl64Lk9wNBKOmaj33XkQdumhXAIYhI0WO03GeiycPCsxbmX536V5NEXpC3Ng==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/markdown-it-katex/-/markdown-it-katex-2.0.3.tgz}
+    dependencies:
+      katex: 0.6.0
+    dev: false
+
+  /markdown-it-link-attributes@3.0.0:
+    resolution: {integrity: sha512-B34ySxVeo6MuEGSPCWyIYryuXINOvngNZL87Mp7YYfKIf6DcD837+lXA8mo6EBbauKsnGz22ZH0zsbOiQRWTNg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/markdown-it-link-attributes/-/markdown-it-link-attributes-3.0.0.tgz}
+    dev: false
+
   /markdown-it-link-attributes@4.0.1:
     resolution: {integrity: sha512-pg5OK0jPLg62H4k7M9mRJLT61gUp9nvG0XveKYHMOOluASo9OEF13WlXrpAp2aj35LbedAy3QOCgQCw0tkLKAQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/markdown-it-link-attributes/-/markdown-it-link-attributes-4.0.1.tgz}
+    dev: false
+
+  /markdown-it@12.3.2:
+    resolution: {integrity: sha512-TchMembfxfNVpHkbtriWltGWc+m3xszaRD0CZup7GFFhzIgQqxIfn3eGj1yZpfuflzPvfkt611B2Q/Bsk1YnGg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/markdown-it/-/markdown-it-12.3.2.tgz}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 2.1.0
+      linkify-it: 3.0.3
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
     dev: false
 
   /markdown-it@13.0.1:
@@ -3019,6 +3527,10 @@ packages:
       linkify-it: 4.0.1
       mdurl: 1.0.1
       uc.micro: 1.0.6
+    dev: false
+
+  /match-at@0.1.1:
+    resolution: {integrity: sha512-h4Yd392z9mST+dzc+yjuybOGFNOZjmXIPKWjxBd1Bb23r4SmDOsk2NYCU2BMUBGbSpZqwVsZYNq26QS3xfaT3Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/match-at/-/match-at-0.1.1.tgz}
     dev: false
 
   /mdast-util-from-markdown@1.3.1:
@@ -3304,6 +3816,12 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
+  /minimatch@3.1.2:
+    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/minimatch/-/minimatch-3.1.2.tgz}
+    dependencies:
+      brace-expansion: 1.1.11
+    dev: false
+
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/minimatch/-/minimatch-9.0.3.tgz}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -3348,6 +3866,10 @@ packages:
       pathe: 1.1.1
       pkg-types: 1.0.3
       ufo: 1.3.0
+    dev: false
+
+  /monaco-editor@0.23.0:
+    resolution: {integrity: sha512-q+CP5zMR/aFiMTE9QlIavGyGicKnG2v/H8qVvybLzeFsARM8f6G9fL0sMST2tyVYCwDKkGamZUI6647A0jR/Lg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/monaco-editor/-/monaco-editor-0.23.0.tgz}
     dev: false
 
   /monaco-editor@0.37.1:
@@ -3601,6 +4123,12 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/prettier/-/prettier-2.8.8.tgz}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
+
   /prettier@3.0.2:
     resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/prettier/-/prettier-3.0.2.tgz}
     engines: {node: '>=14'}
@@ -3710,6 +4238,14 @@ packages:
     resolution: {integrity: sha512-IXgzBWvWQwE6PrDI05OvmXUIruQTcoMDzRsOd5CDvHCVLcLHMTSYvOK5Cm46kWqlV3yAbuSpBZdJ5oP5OUoStg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/robust-predicates/-/robust-predicates-3.0.2.tgz}
     dev: false
 
+  /rollup@2.77.3:
+    resolution: {integrity: sha512-/qxNTG7FbmefJWoeeYJFbHehJ2HNWnjkAFRKzWN/45eNBBF/r8lo992CwcJXEzyVxs5FmfId+vTSTQDb+bxA+g==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/rollup/-/rollup-2.77.3.tgz}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: false
+
   /rollup@3.28.1:
     resolution: {integrity: sha512-R9OMQmIHJm9znrU3m3cpE8uhN0fGdXiawME7aZIpQqvpS/85+Vt1Hq1/yVIcYfOmaQiHjvXkQAoJukvLpau6Yw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/rollup/-/rollup-3.28.1.tgz}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
@@ -3799,8 +4335,25 @@ packages:
       vscode-textmate: 8.0.0
     dev: false
 
+  /shiki@0.9.15:
+    resolution: {integrity: sha512-/Y0z9IzhJ8nD9nbceORCqu6NgT9X6I8Fk8c3SICHI5NbZRLdZYFaB233gwct9sU0vvSypyaL/qaKvzyQGJBZSw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/shiki/-/shiki-0.9.15.tgz}
+    dependencies:
+      jsonc-parser: 3.2.0
+      vscode-oniguruma: 1.7.0
+      vscode-textmate: 5.2.0
+    dev: false
+
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/signal-exit/-/signal-exit-3.0.7.tgz}
+    dev: false
+
+  /sirv@1.0.19:
+    resolution: {integrity: sha512-JuLThK3TnZG1TAKDwNIqNq6QA2afLOCcm+iE8D1Kj3GA40pSPsxQjjJl0J8X3tsR7T+CP1GavpzLwYkgVLWrZQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/sirv/-/sirv-1.0.19.tgz}
+    engines: {node: '>= 10'}
+    dependencies:
+      '@polka/url': 1.0.0-next.21
+      mrmime: 1.0.1
+      totalist: 1.1.0
     dev: false
 
   /sirv@2.0.3:
@@ -3822,9 +4375,43 @@ packages:
     dev: false
     optional: true
 
+  /slidev-theme-light-icons@1.0.2(@slidev/client@0.42.9)(shiki@0.14.3)(vue-template-compiler@2.7.14):
+    resolution: {integrity: sha512-rcXi/ugBjVVqL9gMDZGjQuxnVXGLMcrpRsM4MHeccAa0KXldheBq4s5VfiuzpUFxBz938dJGfTyAt0HVr0ViBg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/slidev-theme-light-icons/-/slidev-theme-light-icons-1.0.2.tgz}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@slidev/cli': 0.7.4(vue-template-compiler@2.7.14)
+      '@slidev/theme-default': 0.7.9(@slidev/client@0.42.9)(shiki@0.14.3)
+      light-icons: 1.0.10
+    transitivePeerDependencies:
+      - '@slidev/client'
+      - '@vue/composition-api'
+      - less
+      - playwright-chromium
+      - sass
+      - shiki
+      - stylus
+      - supports-color
+      - vue-template-compiler
+    dev: false
+
+  /slidev-theme-takahashi@1.0.0:
+    resolution: {integrity: sha512-4RNK8DFXzwberwGN5LVlR/AxhpKKA6+c+78kwPU0+gCM68KcDUw2lCAb6VOLIohXLCp7USm8tAzmU7I6Lhf+ig==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/slidev-theme-takahashi/-/slidev-theme-takahashi-1.0.0.tgz}
+    engines: {node: '>=14.0.0', slidev: '>=0.19.3'}
+    dependencies:
+      '@slidev/types': 0.22.7
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.4
+      theme-vitesse: 0.1.14
+    dev: false
+
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/source-map-js/-/source-map-js-1.0.2.tgz}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /sourcemap-codec@1.4.8:
+    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: false
 
   /sprintf-js@1.0.3:
@@ -3904,6 +4491,13 @@ packages:
       has-flag: 3.0.0
     dev: false
 
+  /supports-color@7.2.0:
+    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/supports-color/-/supports-color-7.2.0.tgz}
+    engines: {node: '>=8'}
+    dependencies:
+      has-flag: 4.0.0
+    dev: false
+
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz}
     engines: {node: '>= 0.4'}
@@ -3952,6 +4546,11 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: false
+
+  /totalist@1.1.0:
+    resolution: {integrity: sha512-gduQwd1rOdDMGxFG1gEvhV88Oirdo2p+KjoYFU7k2g+i7n6AFFbDQ5kMPUsW0pNbfQsB/cwXvT1i4Bue0s9g5g==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/totalist/-/totalist-1.1.0.tgz}
+    engines: {node: '>=6'}
     dev: false
 
   /totalist@3.0.1:
@@ -4082,7 +4681,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /unplugin-icons@0.16.5:
+  /unplugin-icons@0.16.5(@vue/compiler-sfc@3.3.4)(vue-template-compiler@2.7.14):
     resolution: {integrity: sha512-laCCqMWfng1XZgB9yowGfjBdDhtmz8t8zVnhzRNEMhBNdy26QrVewVmdXk/zsiAQYnEWvIxTjvW1nQXrxdd2+w==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/unplugin-icons/-/unplugin-icons-0.16.5.tgz}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
@@ -4105,10 +4704,12 @@ packages:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.6
       '@iconify/utils': 2.1.9
+      '@vue/compiler-sfc': 3.3.4
       debug: 4.3.4
       kolorist: 1.8.0
       local-pkg: 0.4.3
       unplugin: 1.4.0
+      vue-template-compiler: 2.7.14
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4229,6 +4830,36 @@ packages:
       sade: 1.8.1
     dev: false
 
+  /vite-plugin-components@0.8.4(vite@2.9.16):
+    resolution: {integrity: sha512-h6/FNBKBXc4TIcHxnFYxa4+aBGDZusqp/6Ra3LBvwolwFuX6k8qPsBbXkBP0I+UwOkyHw9iU2xJ4rdYBGyN+0Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-components/-/vite-plugin-components-0.8.4.tgz}
+    deprecated: renamed to `unplugin-vue-components`, see https://github.com/antfu/unplugin-vue-components/releases/tag/v0.14.0
+    peerDependencies:
+      vite: ^2.0.0-beta.69
+    dependencies:
+      chokidar: 3.5.3
+      debug: 4.3.4
+      fast-glob: 3.3.1
+      minimatch: 3.1.2
+      vite: 2.9.16
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /vite-plugin-icons@0.5.1(@iconify/json@1.1.461)(@vue/compiler-sfc@3.3.4)(vue-template-compiler@2.7.14):
+    resolution: {integrity: sha512-snEQYVnZ7NFEShFpki3vL9vj8k7M60PO6SXQTZgzIgrwlVsTsGzgsLw8B73v4DzEygPS7wuw3q6XqlZDVUMSiQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-icons/-/vite-plugin-icons-0.5.1.tgz}
+    deprecated: renamed to `unplugin-icons`, see https://github.com/antfu/unplugin-icons/releases/tag/v0.7.0
+    peerDependencies:
+      '@iconify/json': '*'
+      '@vue/compiler-sfc': ^3.0.2
+      vue-template-compiler: ^2.6.12
+    dependencies:
+      '@iconify/json': 1.1.461
+      '@iconify/json-tools': 1.0.10
+      '@vue/compiler-sfc': 3.3.4
+      vue-template-compiler: 2.7.14
+      vue-template-es2015-compiler: 1.9.1
+    dev: false
+
   /vite-plugin-inspect@0.7.38(vite@4.4.9):
     resolution: {integrity: sha512-+p6pJVtBOLGv+RBrcKAFUdx+euizg0bjL35HhPyM0MjtKlqoC5V9xkCmO9Ctc8JrTyXqODbHqiLWJKumu5zJ7g==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-inspect/-/vite-plugin-inspect-0.7.38.tgz}
     engines: {node: '>=14'}
@@ -4250,6 +4881,30 @@ packages:
       vite: 4.4.9
     transitivePeerDependencies:
       - rollup
+      - supports-color
+    dev: false
+
+  /vite-plugin-md@0.6.7(vite@2.9.16):
+    resolution: {integrity: sha512-R9i61r1y6gfelJKtHiHkw6NOkucFzGRgy7VL7bqMufiSh1UNyYKZrpiQtagzavpBlJSVk34lfEyfyKpQyeuocQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-md/-/vite-plugin-md-0.6.7.tgz}
+    peerDependencies:
+      vite: ^2.0.0
+    dependencies:
+      gray-matter: 4.0.3
+      markdown-it: 12.3.2
+      vite: 2.9.16
+    dev: false
+
+  /vite-plugin-remote-assets@0.2.2(vite@2.9.16):
+    resolution: {integrity: sha512-Hl2g1EGJW7jHjNKQ0hf96LJEbfmintfQLBIgKJkyFPyjO1NH3gNUheFgBoxi6G4/nbE9hHzpIIr30iwm1NxLlQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-remote-assets/-/vite-plugin-remote-assets-0.2.2.tgz}
+    peerDependencies:
+      vite: ^2.0.0
+    dependencies:
+      axios: 0.21.4(debug@4.3.4)
+      debug: 4.3.4
+      fs-extra: 9.1.0
+      magic-string: 0.25.9
+      vite: 2.9.16
+    transitivePeerDependencies:
       - supports-color
     dev: false
 
@@ -4294,6 +4949,20 @@ packages:
       - supports-color
     dev: false
 
+  /vite-plugin-windicss@0.16.7(vite@2.9.16):
+    resolution: {integrity: sha512-fNBLO2EBdQsJNU3IyehSmqPdrHc6Ve+hPYDaf5SrW8nGd9Wbd8ZVh6cX/1blRcjMw0qOjgcx7GM8pRWBjhzt3Q==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-windicss/-/vite-plugin-windicss-0.16.7.tgz}
+    peerDependencies:
+      vite: ^2.0.1
+    dependencies:
+      '@windicss/plugin-utils': 0.16.7
+      chalk: 4.1.2
+      debug: 4.3.4
+      vite: 2.9.16
+      windicss: 3.5.6
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /vite-plugin-windicss@1.9.1(vite@4.4.9):
     resolution: {integrity: sha512-CWm1b/tXVCJTbEGn4oB8B7Gev9xDuY9k4E/KiJqDuLYspBUFQyZKPF2mSZ3DfNdojsfqgzxu9ervqvlb9jJ7fw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite-plugin-windicss/-/vite-plugin-windicss-1.9.1.tgz}
     peerDependencies:
@@ -4306,6 +4975,30 @@ packages:
       windicss: 3.5.6
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /vite@2.9.16:
+    resolution: {integrity: sha512-X+6q8KPyeuBvTQV8AVSnKDvXoBMnTx8zxh54sOwmmuOdxkjMmEJXH2UEchA+vTMps1xw9vL64uwJOWryULg7nA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vite/-/vite-2.9.16.tgz}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.14.54
+      postcss: 8.4.28
+      resolve: 1.22.4
+      rollup: 2.77.3
+    optionalDependencies:
+      fsevents: 2.3.3
     dev: false
 
   /vite@4.4.9:
@@ -4347,6 +5040,10 @@ packages:
     resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vscode-oniguruma/-/vscode-oniguruma-1.7.0.tgz}
     dev: false
 
+  /vscode-textmate@5.2.0:
+    resolution: {integrity: sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vscode-textmate/-/vscode-textmate-5.2.0.tgz}
+    dev: false
+
   /vscode-textmate@8.0.0:
     resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vscode-textmate/-/vscode-textmate-8.0.0.tgz}
     dev: false
@@ -4384,6 +5081,17 @@ packages:
       - '@vue/composition-api'
     dev: false
 
+  /vue-template-compiler@2.7.14:
+    resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz}
+    dependencies:
+      de-indent: 1.0.2
+      he: 1.2.0
+    dev: false
+
+  /vue-template-es2015-compiler@1.9.1:
+    resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz}
+    dev: false
+
   /vue@3.3.4:
     resolution: {integrity: sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/vue/-/vue-3.3.4.tgz}
     dependencies:
@@ -4413,6 +5121,12 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+    dev: false
+
+  /windicss@2.5.14:
+    resolution: {integrity: sha512-8Lm7U1M5AzJPbiaVSVz7qWdETRzlkv//5LBMICBBAojos1jo09lUGhNZ5rBzHeldB9JmqYMDOGgrrXHExu0EAg==, tarball: https://npmjs.tools.nykredit.it/nexus/repository/npm/windicss/-/windicss-2.5.14.tgz}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: false
 
   /windicss@3.5.6:

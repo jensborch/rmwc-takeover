@@ -4,11 +4,14 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@slidev/cli": "^0.42.9",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-light-icons": "^1.0.2",
+    "slidev-theme-takahashi": "^1.0.0"
   }
 }
