@@ -1,4 +1,4 @@
-# RMWC taker
+# RMWC takerover
 
 The story of a friendly takeover of large Github project.
 
