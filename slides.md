@@ -97,9 +97,10 @@ layout: center
 # Why
 
 * Based on <a href="https://github.com/material-components/material-components-web">Google Material Components for the Web</a>
-* Avoids breaking changes
+* Avoids breaking changes (at all cost)
 * Individually packaged and released components
-* Not opiononated on e.g. styling
+* Not opinionated on e.g. styling
+* How we would have done it ourself
 
 ---
 layout: center
@@ -113,15 +114,46 @@ layout: center
 
 * Not based on Google Material Components for the Web
 * Many breaking changes
-* Opiononated on styling etc.
+* Opinionated on styling etc.
+* Today MUI has better traction than RMWC
 
 ---
 
 # History
 
-* Version 1 released in 2018
-* Created by Jamesm Friedman
-* Largely a one man effort
+* Version was 1 released January 2018
+* Created by James Friedman
+* Largely a one man effort - an astonishing achievement
+* Adopted by us in May 2018
+* Today we have around 10 applications based on RMWC
+
+---
+
+# Abandonment
+
+* Progresses slowed at the end of 2020
+* Weren't updated to latest version of Google Material Components for the Web
+* Bugs weren't fixed
+* Building our applications started to become problematic
+* Even though the framework was used even by Google, others weren't contributing
+
+---
+
+# Options
+
+* Migrate to MUI
+  * Large migrating effort
+  * Bad history of breaking changes
+  * Not a particular fun job to do
+* Start contributing to RMWC
+  * Fun and exiting
+  * Might even be cheaper
+  * Our chance to contribute
+
+---
+
+# The friendly takeover
+
 ---
 layout: center
 ---
@@ -131,6 +163,9 @@ layout: center
 </a>
 
 ---
+
+
+
 
 # Slides created with Slidev
 
