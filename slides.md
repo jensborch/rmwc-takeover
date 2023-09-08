@@ -196,7 +196,7 @@ layout: center
 ----
 # The friendly takeover part 2
 
-* After some time it was clear that James didn't time need to invest in the project
+* After some time it was clear that James didn't have the time need to invest in the project
 * RMVC was change from a repo on James's profile into an Github organization
 * We ended up having full admin rights over the projects
 * We are now working on releasing RMWC version 14 based on Google Material version 14
