@@ -131,11 +131,15 @@ layout: center
 
 # Abandonment
 
-* Progresses slowed at the end of 2020
+* Even though the framework was used internally by Google progresses slowed down at the end of 2020
 * Weren't updated to latest version of Google Material Components for the Web
 * Bugs weren't fixed
 * Building our applications started to become problematic
-* Even though the framework was used even by Google, others weren't contributing
+* Others weren't contributing
+
+---
+
+<img src="discord.png" />
 
 ---
 
@@ -152,7 +156,59 @@ layout: center
 
 ---
 
-# The friendly takeover
+# The friendly takeover part 1
+
+* We got in contact with James around the beginning of 2022
+* He was no longer able to contribute to the project as much as before
+* <a href="https://github.com/rmwc/rmwc/issues/758https://github.com/rmwc/rmwc/issues/758">Project Lazarus</a> was started to bring RMWC up to date
+
+---
+
+# The team
+
+<div class="flex">
+<div>
+<img src="https://avatars.githubusercontent.com/u/975256?v=4" class="m-5 h-40 rounded shadow"/>
+</div>
+<div>
+<img src="https://avatars.githubusercontent.com/u/12230809?v=4" class="m-5 h-40 rounded shadow"/>
+</div>
+<div>
+<img src="https://avatars.githubusercontent.com/u/16644098?v=4" class="m-5 h-40 rounded shadow"/>
+</div>
+<div>
+<img src="https://avatars.githubusercontent.com/u/1300390?v=4" class="m-5 h-40 rounded shadow"/>
+</div>
+<div>
+<img src="https://avatars.githubusercontent.com/u/19765421?v=4" class="m-5 h-40 rounded shadow"/>
+</div>
+</div>
+
+----
+
+# What did we do?
+
+* Weekly meeting
+* Establish trust
+* Defined roadmap (Googler Material version 5 ➡ 8)
+* Started working
+
+----
+# The friendly takeover part 2
+
+* After some time it was clear that James didn't time need to invest in the project
+* RMVC was change from a repo on James's profile into an Github organization
+* We ended up having full admin rights over the projects
+* We are now working on releasing RMWC version 14 based on Google Material version 14
+
+---
+
+# Challenges
+
+* Getting the needed time
+* Corporate Windows setup
+* Learning curve
+* Yak shaving - toolchain and outdated dependencies
 
 ---
 layout: center
@@ -163,9 +219,12 @@ layout: center
 </a>
 
 ---
+layout: center
+---
 
+<img src="react-norway.jpg"/>
 
-
+---
 
 # Slides created with Slidev
 
