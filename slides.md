@@ -15,6 +15,7 @@ drawings:
   persist: false
 transition: slide-left
 title: The open source rollercoaster
+hideInToc: true
 ---
 
 # The open source rollercoaster
@@ -36,6 +37,7 @@ The story of taking over a large Github project
 
 ---
 transition: fade-out
+hideInToc: true
 ---
 
 # Table of contents
@@ -44,6 +46,7 @@ transition: fade-out
 
 ---
 layout: center
+hideInToc: true
 ---
 
 # Opens Source software consititute 70-90% of any given piece of modern software solution
@@ -52,16 +55,18 @@ layout: center
 
 ---
 layout: center
----
-
-# We have a responsibility to give something back
-
----
-layout: center
+hideInToc: true
 ---
 # Faker.js
 
 <a href="https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected">“Respectfully, I am no longer going to support Fortune 500s (and other smaller sized companies) with my free work”</a>
+
+---
+layout: center
+transition: fade-out
+---
+
+# We have a responsibility to give something back
 
 ---
 layout: center
@@ -85,6 +90,7 @@ layout: center
 
 ---
 layout: center
+hideInToc: true
 ---
 
 # What
@@ -92,6 +98,7 @@ layout: center
 A React UI Kit built on Google's official Material Components Web library
 ---
 layout: center
+hideInToc: true
 ---
 
 # Why
@@ -100,7 +107,7 @@ layout: center
 * Avoids breaking changes (at all cost)
 * Individually packaged and released components
 * Not opinionated on e.g. styling
-* How we would have done it ourself
+* How we would have done it ourself 😉
 
 ---
 layout: center
@@ -109,11 +116,13 @@ layout: center
 # Alternatives
 
 ---
+hideInToc: true
+---
 
 # Material UI or MUI
 
 * Not based on Google Material Components for the Web
-* Many breaking changes
+* Many breaking changes 💔
 * Opinionated on styling etc.
 * Today MUI has better traction than RMWC
 
@@ -123,7 +132,7 @@ layout: center
 
 * Version was 1 released January 2018
 * Created by James Friedman
-* Largely a one man effort - an astonishing achievement
+* Primarily a solo endeavor, truly remarkable
 * Adopted by us in May 2018
 * Today we have around 10 applications based on RMWC
 
@@ -131,16 +140,18 @@ layout: center
 
 # Abandonment
 
-* Even though the framework was used internally by Google progresses slowed down at the end of 2020
-* Weren't updated to latest version of Google Material Components for the Web
+* Despite internal usage at Google, progress slowed down towards the end of 2020
+* Not updated to latest version of Google Material Components for the Web
 * Bugs weren't fixed
 * Building our applications started to become problematic
-* Others weren't contributing
+* The community wasn't making significant contributions
 
 ---
 
 <img src="discord.png" />
 
+---
+hideInToc: true
 ---
 
 # Options
@@ -159,9 +170,11 @@ layout: center
 # The friendly takeover part 1
 
 * We got in contact with James around the beginning of 2022
-* He was no longer able to contribute to the project as much as before
+* His ability to contribute to the project had diminished
 * <a href="https://github.com/rmwc/rmwc/issues/758https://github.com/rmwc/rmwc/issues/758">Project Lazarus</a> was started to bring RMWC up to date
 
+---
+hideInToc: true
 ---
 
 # The team
@@ -184,21 +197,23 @@ layout: center
 </div>
 </div>
 
-----
+---
+hideInToc: true
+---
 
 # What did we do?
 
-* Weekly meeting
+* Weekly meetings
 * Establish trust
-* Defined roadmap (Googler Material version 5 ➡ 8)
+* Defined a roadmap (Googler Material version 5 ➡ 8)
 * Started working
 
 ----
 # The friendly takeover part 2
 
-* After some time it was clear that James didn't have the time need to invest in the project
-* RMVC was change from a repo on James's profile into an Github organization
-* We ended up having full admin rights over the projects
+* After a while, it became evident that James couldn't allocate the required time to invest in the project
+* RMWC was change from a repo on James's profile into an Github organization
+* We ended up with the keys to the kingdom 😨
 * We are now working on releasing RMWC version 14 based on Google Material version 14
 
 ---
@@ -209,6 +224,15 @@ layout: center
 * Corporate Windows setup
 * Learning curve
 * Yak shaving - toolchain and outdated dependencies
+
+---
+
+# Bennfits
+
+* Fun and energizing
+* Career enhancing
+* Branding possibilities
+* Control and independence
 
 ---
 layout: center
@@ -224,6 +248,8 @@ layout: center
 
 <img src="react-norway.jpg"/>
 
+---
+hideInToc: true
 ---
 
 # Slides created with Slidev
