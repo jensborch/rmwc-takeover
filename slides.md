@@ -1,7 +1,7 @@
 ---
 theme: default
 colorSchema: dark
-background: https://lh3.googleusercontent.com/pw/AIL4fc9IcGYttFG1_ijz3BPLH4GB5Ebe3m_zm7K4naFGg_1TBMtUrH-Zs6PMF4OKS_msTdr3i3VAgCtipZ17J8HA9g929621UqaNaYKpvv3ILb8lFcXO-0UB4bh7UVVGHmIdYmLUC2jOjciAN9bj0ga229yC7A=w1401-h1051-s-no?authuser=0
+background: ./roller-coaster.jpg
 highlighter: shikir
 class: text-center
 lineNumbers: false
@@ -51,13 +51,18 @@ hideInToc: true
 
 # Opens Source software consititute 70-90% of any given piece of modern software solution
 
-<a href="https://www.linuxfoundation.org/blog/blog/a-summary-of-census-ii-open-source-software-application-libraries-the-world-depends-on">According to the The Linux Foundation Open Source Software (FOSS)</a>
+<a href="https://www.linuxfoundation.org/blog/blog/a-summary-of-census-ii-open-source-software-application-libraries-the-world-depends-on">The Linux Foundation Open Source Software (FOSS)</a>
 
 ---
 layout: center
 hideInToc: true
 ---
 # Faker.js
+
+---
+layout: center
+hideInToc: true
+---
 
 <a href="https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected">“Respectfully, I am no longer going to support Fortune 500s (and other smaller sized companies) with my free work”</a>
 
@@ -107,7 +112,7 @@ hideInToc: true
 * Avoids breaking changes (at all cost)
 * Individually packaged and released components
 * Not opinionated on e.g. styling
-* How we would have done it ourself 😉
+* How we would have done it on our own 😉
 
 ---
 layout: center
@@ -130,7 +135,7 @@ hideInToc: true
 
 # History
 
-* Version was 1 released January 2018
+* Version 1 was released in January 2018
 * Created by James Friedman
 * Primarily a solo endeavor, truly remarkable
 * Adopted by us in May 2018
@@ -152,18 +157,29 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Options
 
-* Migrate to MUI
-  * Large migrating effort
-  * Bad history of breaking changes
-  * Not a particular fun job to do
-* Start contributing to RMWC
-  * Fun and exiting
-  * Might even be cheaper
-  * Our chance to contribute
+---
+hideInToc: true
+---
+
+
+# Migrate to MUI
+* Large migrating effort
+* Bad history of breaking changes
+* Not a particular fun job to do
+
+---
+hideInToc: true
+---
+
+# Start contributing to RMWC
+* Fun and exiting
+* Might even be cheaper
+* Our chance to contribute
 
 ---
 
