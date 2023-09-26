@@ -77,7 +77,7 @@ transition: fade-out
 layout: center
 ---
 
-# RMWC
+<img  src="rmwc.svg" class="m-5 h-100"/>
 
 <div class="abs-br m-6 flex gap-2">
   <a href="https://github.com/rmwc/rmwc" target="_blank" alt="GitHub"
@@ -89,7 +89,7 @@ layout: center
 <style>
   .slidev-layout {
     .height: 100%;
-    background-color: #6200ee;
+    background-color: #018786;
   }
 </style>
 
