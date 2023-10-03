@@ -38,6 +38,7 @@ The story of taking over a large Github project
 ---
 transition: fade-out
 hideInToc: true
+layout: center
 ---
 
 # Table of contents
@@ -58,6 +59,10 @@ layout: center
 hideInToc: true
 ---
 # Faker.js
+
+---
+
+<img  src="fakerjs-scandal.png" class="m-5 h-100"/>
 
 ---
 layout: center
@@ -121,6 +126,7 @@ layout: center
 # Alternatives
 
 ---
+layout: center
 hideInToc: true
 ---
 
@@ -132,7 +138,8 @@ hideInToc: true
 * Today MUI has better traction than RMWC
 
 ---
-
+layout: center
+---
 # History
 
 * Version 1 was released in January 2018
@@ -142,7 +149,8 @@ hideInToc: true
 * Today we have around 10 applications based on RMWC
 
 ---
-
+layout: center
+---
 # Abandonment
 
 * Despite internal usage at Google, progress slowed down towards the end of 2020
@@ -152,7 +160,8 @@ hideInToc: true
 * The community wasn't making significant contributions
 
 ---
-
+layout: center
+---
 <img src="discord.png" />
 
 ---
@@ -164,6 +173,7 @@ layout: center
 
 ---
 hideInToc: true
+layout: center
 ---
 
 
@@ -174,6 +184,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Start contributing to RMWC
@@ -182,7 +193,8 @@ hideInToc: true
 * Our chance to contribute
 
 ---
-
+layout: center
+---
 # The friendly takeover part 1
 
 * We got in contact with James around the beginning of 2022
@@ -191,6 +203,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # The team
@@ -215,6 +228,7 @@ hideInToc: true
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # What did we do?
@@ -224,14 +238,18 @@ hideInToc: true
 * Defined a roadmap (Googler Material version 5 ➡ 8)
 * Started working
 
-----
+---
+layout: center
+---
 # The friendly takeover part 2
 
 * After a while, it became evident that James couldn't allocate the required time to invest in the project
-* RMWC was change from a repo on James's profile into an Github organization
-* We ended up with the keys to the kingdom 😨
+* RMWC was changed from a repo on James's profile into an Github organization
+* We ended up with the keys to the kingdom 😨🔑
 * We are now working on releasing RMWC version 14 based on Google Material version 14
 
+---
+layout: center
 ---
 
 # Challenges
@@ -242,13 +260,22 @@ hideInToc: true
 * Yak shaving - toolchain and outdated dependencies
 
 ---
-
-# Bennfits
+layout: center
+---
+# Benefits
 
 * Fun and energizing
 * Career enhancing
 * Branding possibilities
 * Control and independence
+
+---
+
+<img src="github-looks-like-this.png">
+
+---
+
+<img src="bjarne.png">
 
 ---
 layout: center
@@ -266,6 +293,7 @@ layout: center
 
 ---
 hideInToc: true
+layout: center
 ---
 
 # Slides created with Slidev
